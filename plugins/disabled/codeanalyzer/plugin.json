@@ -1,0 +1,9 @@
+{
+  "name": "CodeAnalyzer",
+  "version": "1.0.0",
+  "description": "Sample CodeAnalyzer plugin",
+  "author": "SilentCodingLegend",
+  "plugin_type": "tool",
+  "dependencies": [],
+  "created_at": "2025-06-07T11:17:55.766044"
+}

@@ -1,0 +1,13 @@
+#!/bin/bash
+# SilentCodingLegend AI Agent CLI Wrapper
+
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Activate virtual environment if it exists
+if [ -f "$SCRIPT_DIR/.venv/bin/activate" ]; then
+    source "$SCRIPT_DIR/.venv/bin/activate"
+fi
+
+# Run the CLI with all passed arguments
+python "$SCRIPT_DIR/cli.py" "$@"

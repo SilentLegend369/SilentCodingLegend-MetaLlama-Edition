@@ -1,0 +1,153 @@
+/* SilentCodingLegend AI Agent - Modern Dark Theme */
+
+/* Main app background */
+.stApp {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main header styling for native st.title() */
+h1 {
+    text-align: center !important;
+    color: #00D4AA !important;
+    padding: 1rem 0 !important;
+    margin-bottom: 2rem !important;
+    background: linear-gradient(90deg, #00D4AA, #0099CC) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-weight: bold !important;
+    font-size: 2.5rem !important;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: #2E2E2E;
+}
+
+/* Chat message styling */
+.stChatMessage {
+    background-color: #2A2A2A;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* User message */
+.stChatMessage[data-testid="user-message"] {
+    background-color: #0099CC;
+    color: white;
+}
+
+/* Assistant message */
+.stChatMessage[data-testid="assistant-message"] {
+    background-color: #2A2A2A;
+    border-left: 4px solid #00D4AA;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #00D4AA;
+    color: #1E1E1E;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    background-color: #00B894;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 212, 170, 0.3);
+}
+
+/* Status indicators */
+.status-success {
+    color: #00D4AA;
+    font-weight: bold;
+}
+
+.status-warning {
+    color: #FFB84D;
+    font-weight: bold;
+}
+
+.status-error {
+    color: #FF6B6B;
+    font-weight: bold;
+}
+
+/* Tool execution results */
+.execution-result {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.success-result {
+    background-color: #1B4D3E;
+    border-left: 4px solid #00D4AA;
+}
+
+.error-result {
+    background-color: #4D1B1B;
+    border-left: 4px solid #FF6B6B;
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background-color: #2A2A2A;
+    color: #00D4AA;
+    font-weight: bold;
+}
+
+/* Metric styling */
+.metric-container {
+    background-color: #2A2A2A;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #00D4AA;
+}
+
+/* Code blocks */
+.stCode {
+    background-color: #0D1117;
+    border: 1px solid #30363D;
+}
+
+/* Selectbox and input styling */
+.stSelectbox > div > div {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+}
+
+.stTextInput > div > div > input {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+    border: 1px solid #00D4AA;
+}
+
+/* Loading spinner */
+.stSpinner {
+    color: #00D4AA;
+}
+
+/* Progress bar */
+.stProgress > div > div {
+    background-color: #00D4AA;
+}
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] {
+    background-color: #2A2A2A;
+}
+
+.stTabs [data-baseweb="tab"] {
+    color: #FFFFFF;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #00D4AA;
+    color: #1E1E1E;
+}

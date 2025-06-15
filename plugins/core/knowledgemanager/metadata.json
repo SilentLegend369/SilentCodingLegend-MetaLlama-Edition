@@ -1,0 +1,91 @@
+{
+    "name": "KnowledgeManager",
+    "version": "1.0.0",
+    "description": "Advanced knowledge graph, semantic search, and memory management plugin",
+    "author": "SilentCodingLegend",
+    "plugin_type": "tool",
+    "enabled": true,
+    "dependencies": [
+        "chromadb",
+        "sentence-transformers",
+        "networkx",
+        "numpy",
+        "tiktoken"
+    ],
+    "config": {
+        "enabled": true,
+        "auto_extract_entities": true,
+        "auto_build_relationships": true,
+        "semantic_search_enabled": true,
+        "context_window_size": 4000
+    },
+    "tools": [
+        {
+            "name": "semantic_search",
+            "description": "Perform semantic search across conversations and knowledge",
+            "parameters": {
+                "query": {"type": "string", "required": true, "description": "Search query"},
+                "max_results": {"type": "integer", "default": 10, "description": "Maximum results"},
+                "session_id": {"type": "string", "required": false, "description": "Session to filter by"}
+            }
+        },
+        {
+            "name": "get_relevant_context",
+            "description": "Get comprehensive relevant context for a query",
+            "parameters": {
+                "query": {"type": "string", "required": true, "description": "Query to find context for"},
+                "session_id": {"type": "string", "required": false, "description": "Session identifier"},
+                "max_results": {"type": "integer", "default": 5, "description": "Maximum results per category"},
+                "include_knowledge_graph": {"type": "boolean", "default": true, "description": "Include knowledge graph results"},
+                "include_semantic_search": {"type": "boolean", "default": true, "description": "Include semantic search results"}
+            }
+        },
+        {
+            "name": "get_knowledge_summary",
+            "description": "Get comprehensive knowledge summary for a topic",
+            "parameters": {
+                "topic": {"type": "string", "required": true, "description": "Topic to summarize"}
+            }
+        },
+        {
+            "name": "search_knowledge_graph",
+            "description": "Search knowledge graph for entities and relationships",
+            "parameters": {
+                "query": {"type": "string", "required": true, "description": "Search query"},
+                "entity_types": {"type": "array", "required": false, "description": "Filter by entity types"},
+                "relation_types": {"type": "array", "required": false, "description": "Filter by relationship types"},
+                "max_results": {"type": "integer", "default": 20, "description": "Maximum results"}
+            }
+        },
+        {
+            "name": "add_knowledge_note",
+            "description": "Add a knowledge note to the system",
+            "parameters": {
+                "title": {"type": "string", "required": true, "description": "Note title"},
+                "content": {"type": "string", "required": true, "description": "Note content"},
+                "tags": {"type": "array", "required": false, "description": "Optional tags"},
+                "category": {"type": "string", "default": "general", "description": "Note category"}
+            }
+        },
+        {
+            "name": "cleanup_old_knowledge",
+            "description": "Clean up old knowledge data",
+            "parameters": {
+                "days_to_keep": {"type": "integer", "default": 30, "description": "Days of data to keep"}
+            }
+        },
+        {
+            "name": "get_knowledge_stats",
+            "description": "Get statistics about the knowledge base",
+            "parameters": {}
+        },
+        {
+            "name": "export_knowledge",
+            "description": "Export knowledge data",
+            "parameters": {
+                "format": {"type": "string", "default": "json", "description": "Export format"},
+                "include_vectors": {"type": "boolean", "default": false, "description": "Include vector embeddings"}
+            }
+        }
+    ]
+}

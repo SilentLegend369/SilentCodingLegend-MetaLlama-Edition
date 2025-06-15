@@ -1,0 +1,71 @@
+{
+  "plugins": {
+    "FileSystemTools": {
+      "name": "FileSystemTools",
+      "version": "1.0.0",
+      "description": "File system operations - read, write, list files",
+      "author": "SilentCodingLegend",
+      "plugin_type": "tool",
+      "category": "utility",
+      "tags": [
+        "filesystem",
+        "files",
+        "utility"
+      ],
+      "download_url": "local://core/filesystem_tools",
+      "featured": true
+    },
+    "WebScraper": {
+      "name": "WebScraper",
+      "version": "1.0.0",
+      "description": "Web scraping and content extraction tools",
+      "author": "SilentCodingLegend",
+      "plugin_type": "tool",
+      "category": "web",
+      "tags": [
+        "web",
+        "scraping",
+        "extraction"
+      ],
+      "download_url": "local://core/web_scraper",
+      "featured": true
+    },
+    "DatabaseConnector": {
+      "name": "DatabaseConnector",
+      "version": "1.0.0",
+      "description": "Connect and query various databases",
+      "author": "SilentCodingLegend",
+      "plugin_type": "integration",
+      "category": "database",
+      "tags": [
+        "database",
+        "sql",
+        "integration"
+      ],
+      "download_url": "local://core/database_connector",
+      "featured": true
+    },
+    "CodeAnalyzer": {
+      "name": "CodeAnalyzer",
+      "version": "1.0.0",
+      "description": "Advanced code analysis and quality metrics",
+      "author": "SilentCodingLegend",
+      "plugin_type": "analyzer",
+      "category": "development",
+      "tags": [
+        "code",
+        "analysis",
+        "quality"
+      ],
+      "download_url": "local://core/code_analyzer",
+      "featured": true
+    }
+  },
+  "featured": [
+    "FileSystemTools",
+    "WebScraper",
+    "DatabaseConnector",
+    "CodeAnalyzer"
+  ],
+  "updated_at": "2025-06-15T08:40:18.509664"
+}

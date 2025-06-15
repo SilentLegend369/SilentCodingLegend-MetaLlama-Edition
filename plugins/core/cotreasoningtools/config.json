@@ -1,0 +1,15 @@
+{
+    "name": "Chain of Thought Reasoning Tools",
+    "version": "1.0.0",
+    "description": "Advanced reasoning capabilities with Chain-of-Thought, step-by-step analysis, and problem decomposition",
+    "author": "SilentCodingLegend",
+    "category": "reasoning",
+    "enabled": true,
+    "dependencies": [],
+    "config": {
+        "max_reasoning_steps": 10,
+        "confidence_threshold": 0.7,
+        "enable_reflection": true,
+        "default_reasoning_type": "chain_of_thought"
+    }
+}

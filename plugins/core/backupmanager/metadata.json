@@ -1,0 +1,19 @@
+{
+    "name": "BackupManager",
+    "version": "1.0.0",
+    "description": "Automatic backup and restore tools for the AI agent system",
+    "author": "SilentCodingLegend",
+    "plugin_type": "tool",
+    "dependencies": [
+        "schedule"
+    ],
+    "entry_point": "plugin.BackupManagerPlugin",
+    "category": "system",
+    "tags": [
+        "backup",
+        "restore",
+        "system",
+        "data-protection",
+        "automation"
+    ]
+}

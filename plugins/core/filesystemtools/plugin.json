@@ -1,0 +1,9 @@
+{
+  "name": "FileSystemTools",
+  "version": "1.0.0",
+  "description": "Sample FileSystemTools plugin",
+  "author": "SilentCodingLegend",
+  "plugin_type": "tool",
+  "dependencies": [],
+  "created_at": "2025-06-05T19:05:31.949197"
+}

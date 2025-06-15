@@ -1,0 +1,96 @@
+/* Main app background */
+.stApp {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+}
+
+/* Header styling */
+.main-header {
+    text-align: center;
+    color: #00D4AA;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #00D4AA, #0099CC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Chat message containers */
+.chat-message {
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* User message styling */
+.user-message {
+    background: linear-gradient(135deg, #2D3748, #4A5568);
+    border-left: 4px solid #00D4AA;
+}
+
+/* Assistant message styling */
+.assistant-message {
+    background: linear-gradient(135deg, #1A202C, #2D3748);
+    border-left: 4px solid #0099CC;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: #2D3748;
+}
+
+/* Button styling */
+.stButton > button {
+    background: linear-gradient(90deg, #00D4AA, #0099CC);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+/* Metrics styling */
+.metric-card {
+    background: linear-gradient(135deg, #1A202C, #2D3748);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid #4A5568;
+    text-align: center;
+}
+
+.metric-card h3 {
+    margin: 0;
+    font-size: 1.75rem;
+    color: #00D4AA;
+}
+
+.metric-card p {
+    margin: 0;
+    color: #A0AEC0;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .chat-message {
+        padding: 0.8rem;
+    }
+    .main-header {
+        font-size: 1.5rem;
+        padding: 0.5rem 0;
+    }
+    .metric-card {
+        padding: 0.8rem;
+    }
+    .metric-card h3 {
+        font-size: 1.2rem;
+    }
+    .stButton > button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}

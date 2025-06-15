@@ -1,0 +1,21 @@
+{
+    "name": "WebScraper",
+    "version": "1.0.0",
+    "description": "Web scraping tools for extracting content and links from web pages",
+    "author": "SilentCodingLegend",
+    "plugin_type": "tool",
+    "dependencies": [
+        "aiohttp",
+        "beautifulsoup4",
+        "urllib3"
+    ],
+    "entry_point": "plugin.WebScraperPlugin",
+    "category": "web",
+    "tags": [
+        "scraping",
+        "web",
+        "extraction",
+        "content",
+        "links"
+    ]
+}

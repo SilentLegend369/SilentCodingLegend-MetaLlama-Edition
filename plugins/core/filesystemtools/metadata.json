@@ -1,0 +1,17 @@
+{
+    "name": "FileSystemTools",
+    "version": "1.0.0",
+    "description": "File system tools for reading, writing, and managing files and directories",
+    "author": "SilentCodingLegend",
+    "plugin_type": "tool",
+    "dependencies": [],
+    "entry_point": "plugin.FileSystemToolsPlugin",
+    "category": "filesystem",
+    "tags": [
+        "files",
+        "directories",
+        "filesystem",
+        "io",
+        "management"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "name": "WebSearch",
+    "version": "1.0.0",
+    "description": "Web search tools for finding information online using multiple search providers",
+    "author": "SilentCodingLegend",
+    "plugin_type": "tool",
+    "dependencies": [
+        "aiohttp",
+        "beautifulsoup4",
+        "urllib3"
+    ],
+    "entry_point": "plugin.WebSearchPlugin",
+    "category": "web",
+    "tags": [
+        "search",
+        "web",
+        "information",
+        "google",
+        "bing",
+        "duckduckgo"
+    ]
+}
